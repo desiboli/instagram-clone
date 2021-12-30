@@ -116,6 +116,9 @@ function Post({ id, username, userImg, img, caption }) {
       )}
 
       <p className="pt-5 px-4 truncate">
+        {likes.length > 0 && (
+          <p className="font-bold mb-1">{likes.length} likes</p>
+        )}
         <span className="font-bold mr-2">{username}</span>
         {caption}
       </p>

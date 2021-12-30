@@ -34,7 +34,7 @@ function Modal() {
 
     const docRef = await addDoc(collection(db, "posts"), {
       username: session.user.username,
-      captionRef: captionRef.current.value,
+      caption: captionRef.current.value,
       profileImg: session.user.image,
       timestamp: serverTimestamp(),
     });
